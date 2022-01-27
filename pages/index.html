@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mars</title>
-    <link rel="stylesheet" href="/css/style-index.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href=""><img src="/img/Logo-black.png" alt="logo" width="50px"></a>
-        <nav>
+        <a href="/pages/index.html"><img src="/img/Logo-black.png" alt="logo" width="50px"></a>
+        <div id="btn"><img src="/img/menu.png" alt="bouton menu" width="30"></div>
+        <nav id="menu">
             <ul>
                 <li><a href="/pages/index.html">Accueil</a></li>
                 <li><a href="/pages/Les_lieux_incontournables.html">Les Lieux incontournables</a></li>
@@ -19,13 +21,67 @@
         </nav>
     </header>
     <main>
-        <article id="heading"></article>
-        <article id="geo"></article>
-        <article id="climat"></article>
-        <article id="imgmars"></article>
+        <article id="heading">
+            <h1>Quand Mars Surpasse la Terre</h1>
+            <p>Mars est l'une des planètes habitables le plus proche de la Terre.<br>
+            Dans sa jeunesse, Mars a été frappé violemment par une pluie de<br>
+            météorites géantes.</p>
+        </article>
+        <article id="geo">
+            <section id="map">
+                <img src="/img/carte-mars-repere.png" alt="Carte de Mars avec un repère" style="max-width: 100%;">
+            </section>
+            <section id="resumemap">
+                <h2>Situation Géographique</h2>
+                <p><br><br>Le département se trouve près du Olympus Mons, une montagne de 
+                21287m d'altitude. Cette situation géographique permet une bonne 
+                génération d'eau de source et favorise les dômes de cultivation, la 
+                montagne nous protégée des intempéries de la planète. 
+                Etant près de l'équateur de Mars, les températures sont plus ou 
+                moins égal à la Terre.</p>
+            </section>
+        </article>
+        <article id="climat">
+            <section id="resumeclimat">
+                <div id="textclimat">
+                    <h2>Climat <br><br></h2>
+                    <p>Nous sommes dans la zone Désert intertropical, nous avons des températures qui varie
+                    entre 30° et -20°. Etant donné que la planète a réguliérement des tempêtes de sables, 
+                    la température peut monté très haut comme les deserts de l'Afrique. </p>
+                </div>
+                <img src="/img/temperature_mars.png" alt="image de Mars et ces températures" style="max-width: 100%;" id="imgtempera">
+            </section>
+            <aside><img src="/img/mars_climat1.png" alt="Image montrant les tempêtes de sables"></aside>
+        </article>
+        <article id="imgmars">
+            <secction id="mons" class="box-sizing1">
+                 <img src="/img/mont-Olympus2_mars1.png" alt="mont Olympus de mars" width="100%">
+                 <p>La plus grande montagne du système solaire</p>
+            </secction>
+            <section id="bati1" class="box-sizing1">
+                <img src="/img/batiment-martienne1.png" alt="Batiment martienne" width="100%">
+                <p>Des batiments atypiques</p>
+            </section>
+            <section id="domes1" class="box-sizing1">
+                <img src="/img/dome-ville-martienne-mars1.png" alt="Dômes de végétations" width="100%">
+                <p>Des dômes de végétations</p>
+            </section>
+            <section id="fusee1" class="box-sizing1">
+                <img src="/img/fusee-martienne21.png" alt="Fusée à Mars" width="100%">
+                <p>Les fusées a porté de mains</p>
+            </section>
+            <div id="btnplusmoins">Afficher plus</div>
+        </article>
     </main>
     <footer>
-
+        <a href="/pages/index.html"><img src="/img/Logo-black.png" alt="Logo" width="200px"></a>
+        <div id="contact">
+            <h3>Contact</h3>
+            <p>Adresse : <a href="">2368 Street of Mars, Primis 00001</a></p>
+            <p>Email : <a href="mailto:gjklms@fjdms.ds">gjklms@fjdms.ds</a></p>
+            <p>tel : <a href="tel:000000000001">00 00 00 00 00 01</a></p>
+        </div>
     </footer>
+    <script src="/js/main.js"></script>
 </body>
 </html>

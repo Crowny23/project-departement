@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualités</title>
-    <link rel="stylesheet" href="/css/style-actualites.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href=""><img src="/img/Logo-black.png" alt="logo" width="50px"></a>
-        <nav>
+        <div id="btn"><img src="/img/menu.png" alt="bouton menu" width="30"></div>
+        <nav id="menu">
             <ul>
                 <li><a href="/pages/index.html">Accueil</a></li>
                 <li><a href="/pages/Les_lieux_incontournables.html">Les Lieux incontournables</a></li>
@@ -18,5 +20,28 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <article id="heading">
+            <h1>Quand Mars Surpasse la Terre</h1>
+        </article>
+        <article id="press">
+            <section id="spacex" class="boxpress"><a href="https://www.futura-sciences.com/sciences/actualites/exploration-humaine-spacex-document-detaille-colonisation-mars-starship-79254/" target="_blank"><img src="/img/article-colonisation-mars1.png" alt="Actu colonisation" width="100%"></a><aside class="sourceurl"><p>Source : <a href="https://www.futura-sciences.com/" target="_blank">futura-sciences.com</a></p></aside></section>
+            <section id="eaumars" class="boxpress"><a href="https://theconversation.com/pourquoi-ny-a-t-il-presque-plus-deau-sur-mars-163312" target="_blank"><img src="/img/article-eau-mars1.png" alt="Actu eau sur Mars" width="100%"></a><aside class="sourceurl"><p>Source : <a href="https://theconversation.com/fr" target="_blank">theconversation.com</a></p></aside></section>
+            <section id="elecmars" class="boxpress"><a href="https://www.energystream-wavestone.com/2015/04/produire-de-lelectricite-sur-mars-pourquoi-pas/#:~:text=Au%20contact%20d'une%20surface,de%20l'%C3%A9lectricit%C3%A9%20sur%20Mars." target="_blank"><img src="/img/article-energie-mars1.png" alt="Actu energie" width="100%"></a><aside class="sourceurl"><p>Source : <a href="https://www.energystream-wavestone.com/" target="_blank">energystream-wavestone.com</a></p></aside></section>
+            <section id="gravimars" class="boxpress"><a href="https://www.lemonde.fr/idees/article/2021/08/08/elon-musk-don-quichotte-d-un-nihilisme-planetaire-adule-par-l-ignorance-d-une-societe-en-totale-deconnexion-avec-la-realite-scientifique_6090885_3232.html" target="_blank"><img src="/img/article-faible-gravite1.png" alt="Actu gravité" width="100%"></a><aside class="sourceurl"><p>Source : <a href="https://www.lemonde.fr/" target="_blank">lemonde.fr</a></p></aside></section>
+            <section id="conquetemars" class="boxpress"><a href="https://information.tv5monde.com/info/espace-l-humanite-la-conquete-de-mars-entre-cooperation-et-rivalites-397239" target="_blank"><img src="/img/conquete_de_mars1.png" alt="Actu conquête de Mars" width="100%"></a><aside class="sourceurl"><p>Source : <a href="https://information.tv5monde.com/" target="_blank">information.tv5monde.com</a></p></aside></section>
+            <section id="villemars" class="boxpress"><a href="https://www.bfmtv.com/sciences/mars-un-projet-de-ville-pour-2054-elon-musk-l-imagine-pour-cette-decennie_AN-202103290334.html#:~:text=Sciences-,Mars%3A%20un%20projet%20de%20ville%20pour%202054%2C%20Elon%20Musk%20l,'imagine%20pour%20%22cette%20d%C3%A9cennie%22&text=Des%20architectes%20ont%20imagin%C3%A9%20%C3%A0,250.000%20personnes%20selon%20leurs%20projections." target="_blank"><img src="/img/article-habitation-mars 1.png" alt="Actu habitation à Mars" width="100%"></a><aside class="sourceurl"><p>Source : <a href="https://www.bfmtv.com/" target="_blank">bfmtv.com</a></p></aside></section>
+        </article>
+    </main>
+    <footer>
+        <a href="/pages/index.html"><img src="/img/Logo-black.png" alt="Logo" width="200px"></a>
+        <div id="contact">
+            <h3>Contact</h3>
+            <p>Adresse : <a href="">2368 Street of Mars, Primis 00001</a></p>
+            <p>Email : <a href="mailto:gjklms@fjdms.ds">gjklms@fjdms.ds</a></p>
+            <p>tel : <a href="tel:000000000001">00 00 00 00 00 01</a></p>
+        </div>
+    </footer>
+    <script src="/js/marchefoireactu.js"></script>
 </body>
 </html>

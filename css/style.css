@@ -1,0 +1,399 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    background-color: rgb(0, 0, 0, 0.80);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+.show{
+    display: block !important;
+}
+.hide{
+    display: none !important;
+}
+header{
+    background-color: rgb(0, 0, 0, 0.80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 10000;
+}
+#btn{
+    display: none;
+    cursor: pointer;
+}
+main{
+    padding: 0 100px;
+}
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav > ul >li{
+    margin: 0 20px;
+    transition: all .5s ease;
+}
+nav > ul > li > a{
+    display: block;
+    height: 30px;
+    max-width: 300px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 130%;
+    font-weight: bold;
+    color: #FBFBFD;
+    box-sizing: border-box;
+}
+nav > ul > li:hover > a{
+    border-bottom: 2px solid #FBFBFD;
+    transform: translateY(-2px);
+}
+#heading{
+    background-image: url(/img/wallpaper_en_tete.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #FBFBFD;
+    height: 650px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 14px;
+}
+#heading > h1, #heading > p{
+    font-weight: bolder;
+    text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+    text-align: center;
+}
+#heading > h1{
+    font-size: 64px;
+}
+#heading > p{
+    font-size: 36px;
+}
+#geo{
+    background-image: url(/img/wallpaper_stars1.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 900px;
+    margin-bottom: 14px;
+}
+#geo > #map{
+    margin: 0 20px;
+    background-color: rgb(0, 0, 0, 0.80);
+}
+#geo > #resumemap{
+    color: #FBFBFD;
+    padding: 0 20px;
+    max-width: 900px;
+}
+#textclimat > h2, #resumemap > h2{
+    text-decoration: underline;
+    font-size: 64px;
+}
+#resumemap > p{
+    font-size: 36px;
+}
+#climat{
+    background-image: url(/img/mars_climat_sun.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FBFBFD;
+    height: 900px;
+    margin-bottom: 14px;
+}
+#climat > aside{
+    margin: 0 20px;
+}
+#resumeclimat{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    text-align: right;
+}
+#textclimat > p{
+    font-size: 36px;
+}
+#imgtempera{
+    margin: 20px 0;
+}
+#imgmars{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 14px 0;
+    color: #FBFBFD;
+    font-size: 36px;
+    text-align: center;
+}
+.box-sizing1{
+    max-width: 400px;
+}
+.box-sizing{
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+#btnplusmoins{
+    display: none;
+    background-color: rgb(0, 0, 0, 0.80);
+    padding: 0 10px;
+    cursor: pointer;
+    margin: 30px auto;
+    height: 50px;
+    width: 150px;
+    color: #FBFBFD;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+#btnplusmoins:hover{
+    background-color: #FBFBFD;
+    color: rgb(0, 0, 0, 0.80);
+}
+footer{
+    background-color: rgb(0, 0, 0, 0.80);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    color: #FBFBFD;
+    text-align: right;
+    line-height: 50px;
+}
+h3{
+    font-size: 36px;
+}
+p > a{
+    color: #FBFBFD;
+}
+#lieumars{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+    color: #FBFBFD;
+    font-size: 36px;
+    text-align: center;
+}
+#marchefoire{
+    display: flex;
+    flex-direction: column;
+}
+#marchepop{
+    background-color: rgb(0, 0, 0, 0.80);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+#textmarchepop{
+    color: #FBFBFD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    margin-right: 10px;
+}
+.titleh2marchef{
+    font-size: 48px;
+    text-align: center;
+}
+.resumemarchef{
+    font-size: 36px;
+    max-width: 650px;
+}
+.horaire{
+    font-size: 24px;
+}
+#sousmarchefoire{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.subbox{
+    background-color: rgb(0, 0, 0, 0.80);
+    color: #FBFBFD;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.textmarchefoire{
+    max-width: 650px;
+    margin: 50px 0;
+}
+#press{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.boxpress{
+    max-width: 500px;
+    max-height: 500px;
+    background-color: rgb(0, 0, 0, 0.80);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+    margin-bottom: 50px;
+}
+.sourceurl{
+    margin: 5px 20px;    
+}
+#press p{
+    color: #FBFBFD;
+}
+.boxpress > a > img{
+    transition: all .5s ease;
+}
+.boxpress > a:hover > img{
+    transform: scale(1.05);
+}
+@media screen and (max-width: 1910px){
+    #marchepop{
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        margin-right: 0;
+    }
+    #textmarchepop{
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 1760px){
+    #geo{
+        height: 1200px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        padding: 0;
+        width: auto;
+    }
+    #textclimat > h2, #resumemap > h2{
+        font-size: 36px;
+    }
+    #resumemap > p{
+        font-size: 24px;
+    }
+    #climat{
+        justify-content: center;
+        height: 900px;
+    }
+    #resumeclimat{
+        align-items: center;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    #textclimat > p{
+        font-size: 24px;
+        max-width: 900px;
+    }
+    #climat > aside{
+        display: none;
+    }
+    .titleh2marchef{
+        font-size: 36px;
+    }
+    .resumemarchef{
+        font-size: 24px;
+    }
+    .horaire{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 850px){
+    header{
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        right: 0;
+        left: inherit;
+    }
+    nav{
+        display: none;
+    }
+    nav > ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    #btn{
+        display: block;
+    }
+    main{
+        padding: 0;
+    }
+    #heading{
+        height: 500px;
+    }
+    #heading > h1{
+        margin-top: 20px;
+        font-size: 36px;
+    }
+    #heading > p{
+        font-size: 24px;
+    }
+
+    footer{
+        flex-flow: column;
+        text-align: center;
+    }
+    #imgmars{
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+    }
+    #btnplusmoins{
+        display: block;
+    }
+    #bati1, #domes1, #fusee1{
+        display: none;
+    }
+    #fusee, #bassin, #inexplore, #voyage, #energie, #cultivation, #ciel{
+        display: none;
+    }
+    .boxpress{
+        max-width: 300px;
+    }
+    .box-sizing1{
+        max-width: 300px;
+    }
+    .box-sizing{
+        max-width: 300px;
+    }
+}
