@@ -24,9 +24,9 @@ btnplusmoins.addEventListener('click', function(){
     energie.classList.toggle('show');
     cultivation.classList.toggle('show');
     ciel.classList.toggle('show');
-    if(btnplusmoins.innerHTML == 'Afficher plus'){
-        btnplusmoins.innerHTML = 'Afficher moins';
+    if(btnplusmoins.innerHTML == 'Afficher plus ▼'){
+        btnplusmoins.innerHTML = 'Afficher moins ▲';
     } else{
-        btnplusmoins.innerHTML = 'Afficher plus';
+        btnplusmoins.innerHTML = 'Afficher plus ▼';
     }
 })

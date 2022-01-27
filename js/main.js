@@ -15,9 +15,9 @@ btnplusmoins.addEventListener('click', function(){
     bati.classList.toggle('show');
     domes.classList.toggle('show');
     fusee.classList.toggle('show');
-    if(btnplusmoins.innerHTML == 'Afficher plus'){
-        btnplusmoins.innerHTML = 'Afficher moins';
+    if(btnplusmoins.innerHTML == 'Afficher plus ▼'){
+        btnplusmoins.innerHTML = 'Afficher moins ▲';
     } else{
-        btnplusmoins.innerHTML = 'Afficher plus';
+        btnplusmoins.innerHTML = 'Afficher plus ▼';
     }
 })
