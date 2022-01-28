@@ -35,11 +35,12 @@ header{
     justify-content: center;
     align-items: center;
     margin-bottom: 14px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0px;
     left: 0;
     z-index: 10000;
+    width: 100%;
 }
 #btn{
     display: none;
@@ -74,7 +75,7 @@ nav > ul > li:hover > a{
     transform: translateY(-2px);
 }
 #heading{
-    background-image: url(/img/wallpaper_en_tete.jpg);
+    background-image: url(../img/wallpaper_en_tete.jpg);
     background-position: center;
     background-size: cover;
     color: #FBFBFD;
@@ -97,7 +98,7 @@ nav > ul > li:hover > a{
     font-size: 36px;
 }
 #geo{
-    background-image: url(/img/wallpaper_stars1.png);
+    background-image: url(../img/wallpaper_stars1.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -124,7 +125,7 @@ nav > ul > li:hover > a{
     font-size: 36px;
 }
 #climat{
-    background-image: url(/img/mars_climat_sun.jpg);
+    background-image: url(../img/mars_climat_sun.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -162,8 +163,29 @@ nav > ul > li:hover > a{
     max-width: 400px;
 }
 .box-sizing{
-    max-width: 600px;
-    margin-bottom: 50px;
+    margin: 0 10px 50px 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.box-sizing > img{
+    width: 600px;
+}
+.box-sizing:hover{
+    background-color: rgb(0, 0, 0, 0.80);
+}
+.zoom{
+    transform: scale(1.3);
+    background-color: rgb(0, 0, 0, 0.80);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000000;
 }
 #btnplusmoins{
     display: none;
@@ -335,6 +357,19 @@ p > a{
     .horaire{
         font-size: 18px;
     }
+    #sousmarchefoire{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@media screen and (max-width: 1450px) {
+    .box-sizing > img{
+        width: 450px;
+    }
+    .box-sizing > p{
+        max-width: 450px;
+    }
 }
 @media screen and (max-width: 850px){
     header{
@@ -384,16 +419,17 @@ p > a{
     #bati1, #domes1, #fusee1{
         display: none;
     }
-    #fusee, #bassin, #inexplore, #voyage, #energie, #cultivation, #ciel{
-        display: none;
-    }
     .boxpress{
         max-width: 300px;
     }
     .box-sizing1{
         max-width: 300px;
     }
-    .box-sizing{
+    .box-sizing > img{
+        width: 300px;
+    }
+    .box-sizing > p{
+        font-size: 24px;
         max-width: 300px;
     }
 }
