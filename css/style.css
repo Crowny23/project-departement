@@ -36,7 +36,7 @@ header{
     align-items: center;
     margin-bottom: 14px;
     backdrop-filter: blur(10px);
-    position: fixed;
+    position: sticky;
     top: 0px;
     left: 0;
     z-index: 10000;
@@ -56,7 +56,6 @@ nav > ul{
 }
 nav > ul >li{
     margin: 0 20px;
-    transition: all .5s ease;
 }
 nav > ul > li > a{
     display: block;
@@ -69,6 +68,7 @@ nav > ul > li > a{
     font-weight: bold;
     color: #FBFBFD;
     box-sizing: border-box;
+    transition: all .2s ease;
 }
 nav > ul > li:hover > a{
     border-bottom: 2px solid #FBFBFD;
@@ -377,8 +377,6 @@ p > a{
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        right: 0;
-        left: inherit;
     }
     nav{
         display: none;
@@ -431,5 +429,14 @@ p > a{
     .box-sizing > p{
         font-size: 24px;
         max-width: 300px;
+    }
+    .subbox{
+        margin: 10px;
+    }
+    #marchepop{
+        margin: 10px;
+    }
+    .textmarchefoire{
+        margin: 50px 10px;
     }
 }
